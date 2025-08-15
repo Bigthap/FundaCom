@@ -1,0 +1,72 @@
+<html>
+    <style>
+        table, th, td {
+            border:1px solid black;
+        }
+    </style>  
+    <body>
+        <div style="width: 1080x; height: 1920px; margin: auto; border: 1px solid #ccc; overflow: auto;">
+            <form method="post" action="test.php">
+                 <h3 style="text-align:left;">Travel Information</h3>
+                 <table>
+                    <tr>
+                        <th style="text-align:left;" colspan="2">Price(Bath)</th>
+                    </tr>
+                    <tr>
+                        <td><p>Name: </p></td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td><p>Number: </p></td>
+                        <td><input type="text" name="number"></td>
+                    </tr>
+                    <tr>
+                        <td><p>Destination: </p></td>
+                        <td>
+                            <p>
+                                <input type="radio" name="destination" value="Asia"> Asia - $2500.00 <br>
+                                <input type="radio" name="destination" value="Europe"> Europe - $5000.00 <br>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>Member Status:</p></td>
+                        <td>
+                            <p>
+                                <input type="radio" name="member" value="Nonmember"> Nonmemver <br>
+                                <input type="radio" name="member" value="Member"> Member - 10% Discount <br>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>Tips:</p></td>
+                        <td>
+                            <p>
+                                <select name="tips">
+                                    <option value="0" selected>No Tips</option>
+                                    <option value="0.05">5%</option>
+                                    <option value="0.1" >10%</option>
+                                    <option value="0.15">15%</option>
+                                </select>    
+                            </p>
+                        </td>
+                    </tr>
+                       <tr>
+                        <td><p>Drink (Free if you Tips)</p></td>
+                        <td>
+                            <p>
+                                <input type="checkbox" name="coffee" value="5"> Coffe 5$ <br>
+                                <input type="checkbox" name="tea" value="3"> Tea 3$ <br>
+                                <input type="checkbox" name="water" value="2"> Water 2$ <br>
+                            </p>
+                        </td>
+                    </tr>
+                 </table>
+                 <p>
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" name="cancel" value="Cancel">
+                 </p>
+            </form>
+        </div>
+    </body>
+</html>

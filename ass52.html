@@ -1,0 +1,41 @@
+<html>
+    <style>
+        table, th, td {
+            border:1px solid black;
+        }
+    </style>  
+    <body>
+        <div style="width: 1080x; height: 1920px; margin: auto; border: 1px solid #ccc; overflow: auto;">
+            <form method="post" action="ass52.php">
+                <h3 style="text-align:left;">Buyung Details</h3>
+                <table>
+                <tr>
+                    <th>Price(Bath)</th>
+                    <th>Quantity(Unit)</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="price"></td>
+                    <td><input type="text" name="quantity"></td>
+                </tr>
+                <tr>
+                    <td>Member</td>
+                    <td>
+                        <p>
+                            <input type="radio" name="member" value="20"> Gold-20% Discount <br>
+                            <input type="radio" name="member" value="10"> Silver-10% Discount <br>
+                            <input type="radio" name="member" value="0"> None-No Discount <br>
+                        </p>
+                    </td>
+                </tr>
+                </table>
+                <p>Paid Amount<br>
+                    <input type="text" name="paid"> Baht
+                </p>
+                <p>
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" name="cancel" value="Cancel">
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
