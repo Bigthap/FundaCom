@@ -1,0 +1,31 @@
+<html>  
+    <body>
+            <form method="post" action="ass122.php">
+                <h2 style="text-align:left;">Noodle Order Form</h2>
+                <p>Order ID <input type="text" name="ID"></p>
+                <p>Noodle Type
+                    <select name="Type">
+                        <option value="Wide Rice Noodles">Wide Rice Noodles</option>
+                        <option value="Narrow Rice Noodles">Narrow Rice Noodles</option>
+                        <option value="Yellow Noodles">Yellow Noodles</option>
+                        <option value="Glass Noodles">Glass Noodles</option>
+                    </select></p>
+                <p>
+                    Noodle Soup : <input type="radio" name="soup" value="Clear soup">
+                    Clear soup <input type="radio" name="soup" value="Spicy soup">
+                    Spicy soup
+                </p>
+                <p>Noodle Toppings<br><br>
+                    <input type="checkbox" name="topping[]" value="Pork"> Pork <br>
+                    <input type="checkbox" name="topping[]" value="Beef"> Beef <br>
+                    <input type="checkbox" name="topping[]" value="Meatballs"> Meatballs <br>
+                    <input type="checkbox" name="topping[]" value="Egg"> Egg <br>
+                    <input type="checkbox" name="topping[]" value="Vegetables"> Vegetables <br>
+                </p>
+                <p>
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" name="cancel" value="Cancel">
+                </p>
+            </form>
+    </body>
+</html>

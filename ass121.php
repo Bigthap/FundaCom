@@ -4,16 +4,15 @@
     $index = 0;
     $number = count($num);
 
-    // for($i = 0;$i <= $num;$i++){
-    //     if($num[$i] > $num[$i+1]){
-    //         $max = $num[$i];
-    //         $index = $i;
-    //     }
-    // }
-    // for($j = 0;$j <= $num;$j++){
-    //     echo "$num[$j]<br>";
-    // }
-    echo "$number";
-    echo "<br>MAX number = $max";
+    for($i = 0;$i < $number;$i++){
+        if($num[$i] > $max){
+            $max = $num[$i];
+            $index = $i;
+        }
+    }
+    for($j = 0;$j < $number;$j++){
+        echo "$num[$j]<br>";
+    }
+    echo "<br>Max number = $max";
     echo "<br>Index = $index";
 ?>
